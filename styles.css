@@ -15,6 +15,7 @@
 
 body{
     background-color: rgb(79, 83, 78);
+    background-image: linear-gradient(to bottom, rgb(79, 83, 78), rgb(37, 33, 29));
     width: 100%;
     min-height: 100vh;
 }
@@ -101,7 +102,7 @@ body{
 
 .navbar{
     background-image: linear-gradient(to right, rgb(62, 164, 39), rgb(116, 203, 54));
-    height: 4rem;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,6 +153,7 @@ input{
     gap: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+
     
 }
 
@@ -167,7 +169,9 @@ input{
     line-height: 2rem;
     gap: 1rem;
 
-    box-shadow: 3px 5px 10px rgba(70, 70, 70, 0.4);
+    border-radius: 5px;
+
+    box-shadow: 3px 10px 10px rgba(33, 32, 32,0.3);
 }
 
 h1{
@@ -176,7 +180,9 @@ h1{
 }
 
 #search-title{
+    height: 2.5rem;
     width: 300px;
+    border-radius: 9px;
 }
 
 
@@ -216,7 +222,8 @@ a:hover i{
 }
 #login{
     border: none;
-    padding: 5px;
+    height: 2.5rem;
+    padding: 5px 15px;
     border-radius: 10%;
     background-color: rgb(68, 70, 68);
     color: white;
@@ -254,6 +261,39 @@ a:hover .fa-power-off{
     cursor: pointer;
 }
 
-#search{
+#searchBtn{
+    scale: 1.2;
     cursor: pointer;
 }
+
+#searchBtn:hover{
+    scale: 1.4;
+}
+
+.logo-text{
+    font-family: 'Montserrat';
+  background-image: linear-gradient(
+    -225deg,
+    #155721 0%,
+    #28980c 29%,
+    #a8e135 67%,
+    #f0eead 100%
+  );
+  
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }

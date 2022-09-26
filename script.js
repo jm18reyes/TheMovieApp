@@ -269,8 +269,8 @@ async function display(data){
             let movieJSON = ''
             
             if(clicked == true){
-                document.getElementById("movie-info").innerHTML = `Title: ${data.original_title} <br> 
-                Description: ${data.overview}`
+                document.getElementById("movie-info").innerHTML = `Title: ${data.original_title} <br><br> 
+                Description: ${data.overview} <br>`
             }else{
                 movieJSON = JSON.stringify(data,null,4);
                 document.getElementById("movie-info").innerHTML = `<pre id="pretty-json" style="flex-wrap: wrap;
